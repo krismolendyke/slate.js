@@ -44,6 +44,21 @@ S.bind('left' + MODAL, function(win) {
 
 
 /*
+ * Move bindings.
+ */
+S.bind('c' + MODAL, function(win) {
+    ignoreEmacs(win, function() {
+        win.doOperation(S.op('move', {
+            'x': '(screenSizeX / 2) - (windowSizeX / 2)',
+            'y': 'screenOriginY',
+            'width': 'windowSizeX',
+            'height': 'windowSizeY'
+        }));
+    });
+});
+
+
+/*
  * Window hints, Dvorak-style.
  */
 S.bind('h' + MODAL, function(win) {
