@@ -62,6 +62,10 @@ S.bind('g' + MODAL, function(win) {
                     'width': 6,
                     'height': 3
                 },
+                '1680x1050': {
+                    'width': 8,
+                    'height': 5
+                },
                 '1920x1080': {
                     'width': 8,
                     'height': 5
